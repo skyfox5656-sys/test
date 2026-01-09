@@ -1,0 +1,97 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0b0f1f 0%, #121a2e 100%);
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 260px;
+  gap: 32px;
+  padding: 24px;
+}
+
+.game {
+  background: #101624;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+#tetris {
+  background: #070b14;
+  border-radius: 8px;
+  display: block;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.score,
+.lines {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.next {
+  background: #101624;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+#next {
+  background: #070b14;
+  border-radius: 8px;
+  display: block;
+  margin-top: 8px;
+}
+
+.controls ul {
+  margin: 8px 0 0 0;
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
+#start {
+  background: #5f9bff;
+  color: #0b0f1f;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#start:hover {
+  filter: brightness(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .panel {
+    width: 100%;
+    max-width: 320px;
+  }
+}
